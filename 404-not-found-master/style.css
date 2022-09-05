@@ -10,7 +10,6 @@
 
   --primary-color: hsla(0, 0%, 20%, 1);
   --white: #fff;
-  --link-color: #BDBDBD;
 }
 
 body {
@@ -97,7 +96,15 @@ main button {
   font-weight: 700;
   font-size: 1.4rem;
   text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.2s;
 }
+
+main button:hover{
+  opacity: 0.9;
+} 
 
 footer {
   text-align: center;
@@ -108,7 +115,13 @@ footer a {
   font-size: 1.4rem;
   line-height: 1.7rem;
 
-  color: var(--link-color);
+  color: var(--primary-color);
+
+  transition: 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.9;
 }
 
 footer a strong {
